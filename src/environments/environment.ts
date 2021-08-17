@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   logo:'../assets/images/kudosbeta.png',
   projects:['kudoswall.com','prokudoswall','kudoswall.edu'],
-  urls:['']
+  
 };
 
 
