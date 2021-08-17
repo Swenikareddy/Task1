@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
+  dev2: false,
   logo:'../assets/images/kudosbeta.png',
-  projects:['kudoswall.com','prokudoswall','kudoswall.edu'],
+  projects:['kudoswall.com','prokudoswall','kudoswalledu'],
   
 };
 
