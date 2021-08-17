@@ -12,7 +12,6 @@ export class AppComponent {
   title = 'sample';
   projectsInfo={
     projectList:environment.projects,
-    projectUrls:environment.urls,
     logo:environment.logo,
   }
 
