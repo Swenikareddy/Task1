@@ -7,6 +7,7 @@ import { KudoswallComponent } from './kudoswall/kudoswall.component';
 import { KudoswalleduComponent } from './kudoswalledu/kudoswalledu.component';
 import { ProkudoswallComponent } from './prokudoswall/prokudoswall.component';
 import { IndexpageComponent } from './indexpage/indexpage.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { IndexpageComponent } from './indexpage/indexpage.component';
     ProkudoswallComponent,
     KudoswalleduComponent,
     IndexpageComponent,
+    LoginComponent,
 
   ],
   imports: [

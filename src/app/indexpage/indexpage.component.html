@@ -1,1 +1,10 @@
-<p>indexpage works!</p>
+<div class="box">
+    <div class="box-head"><img class="logo" src={{projectsInfo.logo}} (click)="gotourl();"></div>
+    <div class="box-body" *ngFor="let projectName of projectsInfo.projectList">
+      <div class="box-body-items">
+        <a href="{{projectName}}">{{projectName}}</a>
+      </div>
+    </div>
+  </div>
+  
+

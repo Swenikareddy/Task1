@@ -1,0 +1,38 @@
+.box{
+    background-color: #f4f4f4;
+    width:450px;
+    height: 400px;
+    
+}
+.logo{
+    width:100%;
+
+}
+.box-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+}
+.box-body-items{
+    margin: 20px 0px;
+    height: fit-content;
+    
+
+    justify-content: start;
+
+}
+a{
+    background-color: white;
+    color: black;
+    border: 2px solid #4BBC9C;
+    padding: 10px 140px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: #4BBC9C;
+    color: white;
+  }

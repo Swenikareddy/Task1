@@ -9,16 +9,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   
-  title = 'sample';
-  projectsInfo={
-    projectList:environment.projects,
-    logo:environment.logo,
-  }
-
-  gotourl() {
-    
-    window.location.href = "https://www.kudoswall.com";
-  }
+ 
+  
 
 
 }
