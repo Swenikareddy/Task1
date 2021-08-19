@@ -2,7 +2,8 @@
     background-color: #f4f4f4;
     width:450px;
     height: 400px;
-    
+    margin: auto;
+    padding-top: 20px;
 }
 .logo{
     width:100%;
