@@ -2,10 +2,11 @@
     <div class="box-head"><img class="logo" src={{projectsInfo.logo}} (click)="gotourl();"></div>
     <div class="box-body" *ngFor="let projectName of projectsInfo.projectList">
       <div class="box-body-items">
-        <a href="{{projectName}}">{{projectName}}</a>
+        <a class="link" href="{{projectName}}">{{projectName}}</a>
       </div>
     </div>
-    <h4>click here to<a href="login">login</a></h4>
+    <h6 style="float: right;">click here to <a href="login">login</a></h6>
   </div>
+  
   
 

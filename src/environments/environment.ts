@@ -7,7 +7,10 @@ export const environment = {
   dev2: false,
   logo:'../assets/images/kudosbeta.png',
   projects:['kudoswall.com','prokudoswall','kudoswalledu'],
-  
+  user:{
+    username:"admin",
+    password:"1234"
+  }
 };
 
 

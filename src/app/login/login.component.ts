@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +10,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private formbuilder:FormBuilder,
+   // private tests: TestService,
+  ) {}
 
+  loginform=this.formbuilder.group({
+    username:'',
+    password:''
+  })
+  
   ngOnInit(): void {
+  this.title=localStorage.getItem("token")
+  }
+  title : string="";
+  onSubmit(){
+    let formdata=this.loginform.value;
+    if(formdata.username===environment.user.username && formdata.password==environment.user.password){
+      this.title=formdata.username
+      window.localStorage.setItem('token',JSON.stringify(this.title))
+      alert("login Success")
+      window.location.reload()
+      this.router.navigate([''])
+      
+   }
+   else{
+     alert("Enter valid credentials")
+   }
+    
   }
 
 }
