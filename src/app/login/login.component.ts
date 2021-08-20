@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   })
   
   ngOnInit(): void {
-  this.title=localStorage.getItem("token")
+  //this.title=localStorage.getItem("token")
   }
   title : string="";
   onSubmit(){
