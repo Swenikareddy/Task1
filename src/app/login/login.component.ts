@@ -31,8 +31,8 @@ export class LoginComponent implements OnInit {
       this.title=formdata.username
       window.localStorage.setItem('token',JSON.stringify(this.title))
       alert("login Success")
-      window.location.reload()
-      this.router.navigate([''])
+     // window.location.reload()
+     // this.router.navigate([''])
       
    }
    else{
